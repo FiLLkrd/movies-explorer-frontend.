@@ -1,0 +1,89 @@
+.about-project{
+    background-color: #FFFFFF;
+    padding: 110px 70px; 
+}
+
+.about-project__title{
+    height: 50px;
+    color: #000;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.88px;
+    border-bottom: 1px solid rgba(84, 84, 84, 0.7);
+}
+
+.about-project__section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-project__subtitle{
+    width: 550px;
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.8px;
+}
+
+.about-project__text{
+    width: 550px;
+    color: #000;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.about-project__weeks{
+    margin-top: 110px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 2;
+}
+
+.about-project__week{
+    margin: 0;
+    height: 36px;
+    text-align: center;
+    color: #000;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.about-project__week_green{
+    background-color: #2BE080;
+}
+
+.about-project__week_gray{
+    background-color: #F2F2F2;
+}
+
+.about-project__tech{
+    margin: 0;
+    height: 36px;
+    text-align: center;
+    color: #A0A0A0;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
