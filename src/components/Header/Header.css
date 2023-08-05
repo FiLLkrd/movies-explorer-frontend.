@@ -1,7 +1,35 @@
 .header{
     background-color: #5C5C5C;
-    min-height: 74px;
+}
+
+.header_movies{
+    background-color: #FFFFFF;
+}
+
+.header__select{
+    display: flex;
+    gap: 16px;
+    padding: 7px auto; 
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.header__movies-btn{
+    text-decoration: none;
+    color: #000;
+    text-align: right;
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    
+}
+
+.header__container{
+
     padding: 29px 70px 0; 
+    max-width: 1280px;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -13,35 +41,55 @@
     height: 38px;
 }
 
-.header__auth{
+.header__account{
     display: flex;
-    gap: 30px;
-    justify-content: space-between;
+    gap: 13px;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-.header__button{
-    min-width: 76px;
-    height: 32px;
-    background: none;
-    border: none;
-    color: #FFF;
-    text-align: center;
+.header__account-title{
+    color: #000;
     font-family: Inter;
-    font-size: 12px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: 16px;
-    cursor: pointer;
+    cursor: pointer;   
+    text-decoration: none;
+    
 }
 
-.header__button:last-child{
-    color: #000;
-    font-family: Inter;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 16px; 
-    background-color: #2BE080;
-    align-items: center;
-    border-radius: 3px;
+.header__account-icon{
+    background-color: #F9F9F9;
+    border-radius: 6px;
+    width: 30px;
+    height: 30px;
+    background-image: url(../../images/account-icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+    .header__container {
+        max-width: 708px;
+        padding: 18px;
+    }
+
+    .header__select{
+        display: none;
+    }
+
+    .header__account{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .header__container {
+        max-width: 284px;
+        padding: 18px;
+    }
+
 }
