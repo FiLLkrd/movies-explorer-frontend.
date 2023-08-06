@@ -28,7 +28,7 @@
 
 .header__container{
 
-    padding: 29px 70px 0; 
+    padding: 18px 70px 18px; 
     max-width: 1280px;
     margin: auto;
     display: flex;
@@ -66,7 +66,7 @@
     border-radius: 6px;
     width: 30px;
     height: 30px;
-    background-image: url(../../images/account-icon.png);
+    background-image: url(../../images/account-icon.svg);
     background-position: center;
     background-repeat: no-repeat;
 }

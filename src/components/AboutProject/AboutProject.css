@@ -19,6 +19,7 @@
 .about-project__section{
     display: flex;
     justify-content: space-between;
+    margin-top: 70px;
 }
 
 .about-project__subtitle{
@@ -30,6 +31,8 @@
     font-weight: 400;
     line-height: normal;
     letter-spacing: -0.8px;
+    margin: 0;
+    margin-bottom: 26px;
 }
 
 .about-project__text{
@@ -40,6 +43,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
+    margin: 0;
 }
 
 .about-project__weeks{

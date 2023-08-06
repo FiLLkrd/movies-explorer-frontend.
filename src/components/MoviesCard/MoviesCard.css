@@ -40,7 +40,7 @@
     border-radius: 50px;
     background: none;
     border: none;
-    background-image: url(../../images/button-save.png);
+    background-image: url(../../images/button-save.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-color: #F9F9F9;
@@ -55,7 +55,7 @@
     border-radius: 50px;
     background: none;
     border: none;
-    background-image: url(../../images/button-save-active.png);
+    background-image: url(../../images/button-save-active.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-color: #2BE080;

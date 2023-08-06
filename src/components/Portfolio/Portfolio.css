@@ -36,6 +36,7 @@
     text-decoration: none;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .portfolio__description{
@@ -50,8 +51,8 @@
 }
 
 .portfolio__icon{
-    width: 30px;
-    height: 30px;
+    width: 18px;
+    height: 18px;
 }
 
 @media screen and (max-width: 320px) {
@@ -76,6 +77,10 @@
         width: 18px;
         height: 18px;
     }
+}
+
+.portfolio__link:hover {
+    opacity: 0.6;
 }
 
 

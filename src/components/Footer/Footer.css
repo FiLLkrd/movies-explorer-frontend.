@@ -19,7 +19,8 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    border-bottom: 1px solid #E8E8E8;;
+    border-bottom: 1px solid #E8E8E8;
+    margin: 0;
 }
 
 .footer__list{
@@ -31,6 +32,7 @@
 .footer__links{
     display: flex;
     gap: 20px;
+    align-items: center;
 }
 
 .footer__copyright{
@@ -53,6 +55,10 @@
     cursor: pointer;
     text-decoration: none;
     margin: 0;
+}
+
+.footer__link:hover{
+    opacity: 0.6;
 }
 
 @media screen and (max-width: 768px) {
