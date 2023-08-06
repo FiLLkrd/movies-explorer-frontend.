@@ -1,24 +1,21 @@
 import React from "react";
 import MoviesCard from "../MoviesCard/MoviesCard";
 
-export default function MoviesCardsList(){
+export default function MoviesCardsList(props){
+    const { cards, onSave, savedMovies, onDelete } = props;
     return(
         <section className="cards">
             <ul className="cards__list">
-                <MoviesCard />
-                <MoviesCard />
-                <MoviesCard />
-                <MoviesCard />
-                <MoviesCard />
-                <MoviesCard />
-                <MoviesCard />
-                <MoviesCard />
-                <MoviesCard />
-                <MoviesCard />
-                <MoviesCard />
-                <MoviesCard />
+                {cards.map((card, index) => (
+                    <MoviesCard 
+                    card={card}
+                    key={card.id || index}
+                    savedMovies={savedMovies}
+                    onSave={onSave}
+                    onDelete={onDelete}
+                    />
+                ))}
             </ul>
-            <button className="cards__btn-yet">Еще</button>
         </section>
     );
 }

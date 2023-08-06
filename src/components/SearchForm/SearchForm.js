@@ -1,5 +1,5 @@
 import React, { useCallback } from "react";
-import FilterCheckbox from "../FilterCheckbox/FilterCheckbox";
+
 
 export default function SearchForm(props){
     const { query, shortsToggleSwitch, onInputChange, onToggleChange, onSubmit } = props;
@@ -29,8 +29,16 @@ export default function SearchForm(props){
                 <button className="search__btn" type="submit"></button>
             </form>
         </section>
-        <FilterCheckbox />
+        <div className="search__checkbox-container">
+      <input
+        className="search__checkbox"
+        type="checkbox"
+        id="checkbox"
+        onChange={onToggleChange}
+        checked={shortsToggleSwitch} />
+      <span className="search__chexbox-text">Короткометражки</span>
+    </div>
         </>
 
     );
-}
+} 
