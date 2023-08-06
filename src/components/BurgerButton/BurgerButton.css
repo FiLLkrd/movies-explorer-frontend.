@@ -18,3 +18,11 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 320px) {
+    .burger__button{
+        width: 22px;
+        height: 20px;
+        background-size: cover;
+    }
+}

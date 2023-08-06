@@ -2,8 +2,8 @@
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    margin-top: 43px;
-    margin-bottom: 70px;
+    margin-top: 32px;
+    margin-bottom: 117px;
     width: 1140px;
   }
   
@@ -26,6 +26,10 @@
     position: relative;
     cursor: pointer;
     appearance: none;
+  }
+
+  .filter__checkbox:hover{
+    opacity: 0.6;
   }
 
   .filter__checkbox::after {

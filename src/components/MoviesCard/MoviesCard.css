@@ -50,6 +50,10 @@
     transition: 0.4s ease;
 }
 
+.card__btn-save:hover{
+    opacity: 0.6;
+}
+
 .card__btn-save_active{
     background-repeat: no-repeat;
     border-radius: 50px;
@@ -63,6 +67,10 @@
     height: 30px;
     cursor: pointer;
     transition: 0.4s ease;
+}
+
+.card__btn-save_active:hover{
+    opacity: 0.6;
 }
 
 .card__duration{

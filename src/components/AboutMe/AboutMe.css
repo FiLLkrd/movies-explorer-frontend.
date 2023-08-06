@@ -1,7 +1,7 @@
 .about-me{
     background-color: #FFFFFF;
     padding: 110px 70px; 
-    max-width: 1280px;
+    max-width: 1140px;
     margin: auto;
 }
 
@@ -88,10 +88,10 @@
     background-repeat: no-repeat;
     border-radius: 10px;
     width: 270px;
-    height: 327px;
+    min-height: 327px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
     .about-me{
         max-width: 768px;
         padding: 90px 50px; 
@@ -127,7 +127,7 @@
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 321px) {
     .about-me{
         padding: 70px 18px;
         max-width: 284px;

@@ -6,7 +6,7 @@ export default function Register(){
     return(
    <div className="register">
        <NavLink exact to='/'>
-                    <img src={HeaderLogo} alt="Логотип" className="header__logo logo" />
+                    <img src={HeaderLogo} alt="Логотип" className="login__logo logo" />
                     </NavLink>
        <h2 className="register__title">Добро пожаловать!</h2>
        <form className="register__form">

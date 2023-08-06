@@ -6,7 +6,7 @@ export default function Login(){
     return(
    <div className="login">
        <NavLink exact to='/'>
-                    <img src={HeaderLogo} alt="Логотип" className="header__logo" />
+                    <img src={HeaderLogo} alt="Логотип" className="login__logo" />
                     </NavLink>
        <h2 className="login__title">Рады видеть!</h2>
        <form className="login__form">
