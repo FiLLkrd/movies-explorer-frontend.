@@ -51,14 +51,19 @@
 }
 
 .portfolio__icon{
-    width: 18px;
-    height: 18px;
+    width: 29px;
+    height: 60px;
 }
 
 @media screen and (max-width: 768px) {
     .portfolio{
         padding: 0px 18px 90px;
         max-width: 668px;
+    }
+
+    .portfolio__icon{
+        width: 27px;
+        height: 60px;
     }
 
     .portfolio__description{
@@ -76,7 +81,7 @@
 
 @media screen and (max-width: 321px) {
     .portfolio{
-        padding: 0px 18px 125px;
+        padding: 0px 18px 70px;
         max-width: 284px;
     }
 
@@ -92,9 +97,13 @@
         letter-spacing: -0.72px;
     }
 
+    .portfolio__title{
+        margin-bottom: 21px;
+    }
+
     .portfolio__icon{
         width: 18px;
-        height: 18px;
+        height: 28px;
     }
 }
 

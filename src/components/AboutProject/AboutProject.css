@@ -23,7 +23,7 @@
 }
 
 .about-project__subtitle{
-    width: 550px;
+    max-width: 550px;
     color: #000;
     font-family: Inter;
     font-size: 20px;
@@ -36,7 +36,7 @@
 }
 
 .about-project__text{
-    width: 550px;
+    max-width: 550px;
     color: #000;
     font-family: Inter;
     font-size: 14px;
@@ -100,7 +100,7 @@
     }
 
     .about-project__subtitle{
-        width: 319px;
+        max-width: 319px;
         font-size: 20px;
         font-style: normal;
         font-weight: 400;
@@ -109,7 +109,7 @@
     }
 
     .about-project__text{
-        width: 319px;
+        max-width: 319px;
         font-family: Inter;
         font-size: 12px;
         font-style: normal;

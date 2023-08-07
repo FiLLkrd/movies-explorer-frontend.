@@ -43,7 +43,7 @@
 }
 
 .login__button{
-    margin-top: 179px;
+    margin-top: 159px;
     min-height: 45px;
     background: none;
     border: none;
@@ -51,6 +51,10 @@
     border-radius: 3px;
     cursor: pointer;
     color: #FFFFFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
 .login__button:hover{
@@ -60,6 +64,13 @@
 .login__text{
     margin: 16px auto;
     align-items: center;
+    color: #A0A0A0;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .login__link{
@@ -104,6 +115,7 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+    
     }
 
     

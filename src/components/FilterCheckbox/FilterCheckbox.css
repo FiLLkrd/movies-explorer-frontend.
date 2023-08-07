@@ -1,10 +1,9 @@
 .filter {
-    margin: 0 auto;
+    margin: 0;
     display: flex;
     flex-direction: row;
-    margin-top: 32px;
-    margin-bottom: 117px;
-    width: 1140px;
+    padding: 32px 70px 117px;
+    max-width: 1140px;
   }
   
   .filter__text {
@@ -57,11 +56,14 @@
     transform: translate(16px);
   }
   
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
       .filter{
-          width: 708px;
+          max-width: 708px;
           flex-direction: row-reverse;
           gap: 16px;
+          padding-right: 18px;
+          padding-left: 18px;
+          padding-bottom: 131px;
       }
 
 
@@ -69,9 +71,9 @@
 
   @media screen and (max-width: 320px) {
     .filter{
-      width: 284px;
+      max-width: 284px;
       justify-content: center;
-      margin-top: 41px;
-      margin-bottom: 51px;
+      padding-top: 41px;
+      padding-bottom: 91px;
     }
   }
