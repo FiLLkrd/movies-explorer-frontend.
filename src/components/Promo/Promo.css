@@ -111,8 +111,11 @@
 }
 
 @media screen and (max-width: 321px) {
+
     .promo__container{
-        max-width: 284px;
+        margin: 0;
+        padding: 70px 10px 30px;
+        width: 300px;
     }
 
     .promo__image{
@@ -120,6 +123,7 @@
         height: 206px;
         background-size: cover;
     }
+
 
     .promo__title{
         color: #FFF;
@@ -130,6 +134,7 @@
         font-weight: 400;
         line-height: 38px; /* 126.667% */
         letter-spacing: -1.2px;
+        width: 300px;
     }
 
     .promo__text{
@@ -141,5 +146,6 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        margin: 24px auto 80px;
     }
 }

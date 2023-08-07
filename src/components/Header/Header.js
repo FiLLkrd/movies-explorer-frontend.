@@ -1,5 +1,5 @@
 import React from "react";
-import HeaderLogo from "../../images/HeaderLogo.png";
+import HeaderLogo from "../../images/HeaderLogo.svg";
 import { NavLink, useLocation } from 'react-router-dom';
 import NavBar from "../NavBar/NavBar";
 
