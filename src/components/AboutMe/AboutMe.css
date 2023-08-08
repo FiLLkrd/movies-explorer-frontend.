@@ -117,8 +117,8 @@
     }
 
     .about-me__avatar{
-        min-width: 255px;
-        min-height: 307px;
+        max-width: 255px;
+        max-height: 307px;
 
     }
 
@@ -142,8 +142,8 @@
     }
 
     .about-me__avatar{
-        min-width: 292px;
-        min-height: 352px;
+        max-width: 292px;
+        max-height: 352px;
         margin-bottom: 40px;
     }
 
@@ -166,6 +166,7 @@
         font-style: normal;
         font-weight: 500;
         line-height: 16px; 
+        margin-bottom: 20px;
     }
 
     .about-me__name{
@@ -178,5 +179,9 @@
 
     .about-me__discription{
         max-width: 284px;
+    }
+
+    .about-me__link{
+        margin-top: 40px;
     }
 }

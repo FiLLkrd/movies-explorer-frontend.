@@ -35,6 +35,13 @@
     border-radius: 8px;
     border: 0;
     margin: 10px 0 20px;
+    padding-left: 15px;
+    color: #000;
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
 .register__button{

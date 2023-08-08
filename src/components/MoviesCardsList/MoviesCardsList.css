@@ -12,7 +12,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, 364px);
     gap: 35px 24px;
-    justify-content: start;
+    justify-content: center;
 }
 
 .cards__btn-yet{
