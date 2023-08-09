@@ -1,5 +1,5 @@
 .about-project{
-    max-width: 1280px;
+    max-width: 1140px;
     margin: auto;
     padding: 110px 70px; 
 }
@@ -19,10 +19,11 @@
 .about-project__section{
     display: flex;
     justify-content: space-between;
+    margin-top: 70px;
 }
 
 .about-project__subtitle{
-    width: 550px;
+    max-width: 550px;
     color: #000;
     font-family: Inter;
     font-size: 20px;
@@ -30,16 +31,19 @@
     font-weight: 400;
     line-height: normal;
     letter-spacing: -0.8px;
+    margin: 0;
+    margin-bottom: 26px;
 }
 
 .about-project__text{
-    width: 550px;
+    max-width: 550px;
     color: #000;
     font-family: Inter;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
+    margin: 0;
 }
 
 .about-project__weeks{
@@ -89,14 +93,14 @@
     justify-content: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
     .about-project{
         max-width: 768px;
         padding: 90px 50px;
     }
 
     .about-project__subtitle{
-        width: 319px;
+        max-width: 319px;
         font-size: 20px;
         font-style: normal;
         font-weight: 400;
@@ -105,7 +109,7 @@
     }
 
     .about-project__text{
-        width: 319px;
+        max-width: 319px;
         font-family: Inter;
         font-size: 12px;
         font-style: normal;
@@ -114,7 +118,7 @@
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 321px) {
     .about-project{
         min-width: 284px;
         padding: 70px 18px;
@@ -137,6 +141,7 @@
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
+        margin-bottom: 16px;
     }
 
     .about-project__text{
@@ -145,10 +150,11 @@
         font-style: normal;
         font-weight: 400;
         line-height: 16px; 
+        margin-bottom: 56px;
     }
 
     .about-project__weeks{
-        margin-top: 60px;
+        margin-top: 4px;
     }
 
     .about-project__week{
@@ -162,5 +168,9 @@
         font-size: 11px;
         font-style: normal;
         font-weight: 400;
+    }
+
+    .about-project__week_green{
+        width: 100px;
     }
 }

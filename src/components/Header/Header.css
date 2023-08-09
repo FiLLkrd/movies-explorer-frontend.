@@ -26,19 +26,29 @@
     
 }
 
+.header__movies-btn:hover{
+    opacity: 0.6;
+}
+
 .header__container{
 
-    padding: 29px 70px 0; 
-    max-width: 1280px;
+    padding: 18px 70px 18px; 
+    max-width: 1140px;
     margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header__logo{
     width: 38px;
     height: 38px;
+    margin-right: 60px;
+}
+
+.header__logo:hover{
+    opacity: 0.6;
 }
 
 .header__account{
@@ -47,6 +57,10 @@
     align-content: center;
     flex-wrap: wrap;
     align-items: center;
+}
+
+.header__account:hover{
+    opacity: 0.6;
 }
 
 .header__account-title{
@@ -66,12 +80,12 @@
     border-radius: 6px;
     width: 30px;
     height: 30px;
-    background-image: url(../../images/account-icon.png);
+    background-image: url(../../images/account-icon.svg);
     background-position: center;
     background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
     .header__container {
         max-width: 708px;
         padding: 18px;

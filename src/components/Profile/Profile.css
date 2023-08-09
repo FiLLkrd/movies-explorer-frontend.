@@ -53,6 +53,10 @@
     margin-bottom: 16px;
 }
 
+.profile__btn-change:hover{
+    opacity: 0.6;
+}
+
 .profile__btn-exit{
     background: none;
     border: none;
@@ -64,6 +68,11 @@
     font-weight: 500;
     line-height: normal;
     cursor: pointer;
+    margin-bottom: 70px;
+}
+
+.profile__btn-exit:hover{
+    opacity: 0.6;
 }
 
 .profile__container{
@@ -81,6 +90,10 @@
     .profile__title{
         padding: 236px 0px 96px;
     }
+
+    .profile__btn-exit{
+        margin-bottom: 269px;
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -90,6 +103,7 @@
     }
 
     .profile__title{
+        padding: 70px 0 80px;
         font-size: 24px;
         font-style: normal;
         font-weight: 500;
@@ -113,5 +127,10 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+    }
+
+    .profile__btn-exit{
+        margin-bottom: 30px;
+
     }
 }

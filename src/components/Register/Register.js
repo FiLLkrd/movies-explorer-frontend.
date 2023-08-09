@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, NavLink, useNavigate, Navigate } from 'react-router-dom';
-import HeaderLogo from "../../images/HeaderLogo.png";
+import HeaderLogo from "../../images/HeaderLogo.svg";
 import { useFormWithValidation } from '../../hooks/useForm';
 import { useUserStore } from '../../contexts/CurrentUserContext';
 import mainApi from '../../utils/MainApi';
@@ -44,7 +44,7 @@ export default function Register(){
     return(
    <section className="register">
        <NavLink exact to='/'>
-                    <img src={HeaderLogo} alt="Логотип" className="header__logo logo" />
+                    <img src={HeaderLogo} alt="Логотип" className="login__logo logo" />
                     </NavLink>
        <h2 className="register__title">Добро пожаловать!</h2>
        <form className="register__form" onSubmit={handleSubmit} noValidate>

@@ -5,7 +5,7 @@
 .footer__container{
 
     padding: 79px 70px 0; 
-    max-width: 1280px;
+    max-width: 1140px;
     margin: auto;
 }
 
@@ -19,7 +19,8 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    border-bottom: 1px solid #E8E8E8;;
+    border-bottom: 1px solid #E8E8E8;
+    margin: 0;
 }
 
 .footer__list{
@@ -31,6 +32,7 @@
 .footer__links{
     display: flex;
     gap: 20px;
+    align-items: center;
 }
 
 .footer__copyright{
@@ -55,6 +57,10 @@
     margin: 0;
 }
 
+.footer__link:hover{
+    opacity: 0.6;
+}
+
 @media screen and (max-width: 768px) {
     .footer{
         background-color: #FFFFFF;
@@ -62,12 +68,12 @@
 
     .footer__container{
         max-width: 768px;
-        padding: 0 50px 0;
+        padding: 79px 50px 0;
     }
 }
 
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 321px) {
     .footer__title{
         padding-bottom: 21px;
         font-size: 12px;

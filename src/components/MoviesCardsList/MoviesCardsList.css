@@ -2,17 +2,17 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    
+    padding: 0 70px;
 }
 
 .cards__list{
     padding: 0;
-    margin: 0 auto;
-    width: 1140px;
+    margin: 0;
+    max-width: 1140px;
     display: grid;
-    grid-template-columns: repeat(3, 364px);
+    grid-template-columns: repeat(auto-fill, 364px);
     gap: 35px 24px;
-    justify-content: start;
+    justify-content: center;
 }
 
 .cards__btn-yet{
@@ -26,13 +26,24 @@
     cursor: pointer;
 }
 
-@media screen and (min-width: 768px) and (max-width:1279px) {
+.cards__btn-yet:hover{
+    background-color: #2BE080;
+    color: #F9F9F9;
+}
+
+@media screen and (max-width:1100px) {
+    
+}
+
+
+@media screen and (max-width:769px) {
     .cards{
         border: none;
+        padding: 0 18px;
     }
 
     .cards__list {
-        grid-template-columns: repeat(2, 339px);
+        grid-template-columns: repeat(auto-fill, 339px);
         gap: 22px 30px;
         max-width: 708px;
       }
@@ -46,14 +57,15 @@
 }
 
 @media screen and (max-width: 320px){
-
+    .cards{
+        padding: 0 10px;
+    }
 
     .cards__list{
         gap: 16px;
         width: 284px;
-        grid-template-columns: repeat(1, 300px);
+        grid-template-columns: repeat(auto-fill, 300px);
         margin: 0;
-        padding: 0 10px;
     }
 
     .cards__btn-yet{

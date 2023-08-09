@@ -17,7 +17,16 @@
     cursor: pointer;
     text-decoration: none;
     text-align: center;
-    padding: 8px 20px;
+    padding: 8px 0px;
+    height: 16px;
+}
+
+.auth__login-btn:hover{
+    opacity: 0.6;
+}
+
+.auth__register-btn:hover{
+    opacity: 0.6;
 }
 
 .auth__login-btn{
@@ -35,6 +44,7 @@
     appearance: none;
     text-align: center;
     vertical-align: middle;
+    height: 16px;
 }
 
 @media screen and (max-width: 320px) {
@@ -59,5 +69,6 @@
         font-style: normal;
         font-weight: 500;
         line-height: 16px;
+        padding: 5px 12px;
     }
 }

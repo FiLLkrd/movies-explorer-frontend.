@@ -1,5 +1,5 @@
 import React from "react";
-import icon from "../../images/PortfolioButton.png";
+import icon from "../../images/PortfolioButton.svg";
 
 
 export default function Portfolio(){
@@ -10,7 +10,7 @@ export default function Portfolio(){
             <li className="portfolio__item">
                 <a className="portfolio__link" href="https://github.com/FiLLkrd/how-to-learn" target="_blank"
               rel="noreferrer">
-                    <p className="portfolio__description">Одностраничный сайт</p>
+                    <p className="portfolio__description">Статичный сайт</p>
                     <img className="portfolio__icon" src={icon} alt="иконка ссылки"/>
                 </a>
             </li>

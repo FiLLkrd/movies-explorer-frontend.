@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from "react";
-import HeaderLogo from "../../images/HeaderLogo.png";
+import HeaderLogo from "../../images/HeaderLogo.svg";
 import { NavLink, Link, useNavigate, Navigate } from "react-router-dom";
 import { useFormWithValidation } from '../../hooks/useForm';
 import { checkAuth, login } from '../../utils/auth';
@@ -45,7 +45,7 @@ export default function Login(){
     return(
    <div className="login">
        <NavLink exact to='/'>
-                    <img src={HeaderLogo} alt="Логотип" className="header__logo" />
+                    <img src={HeaderLogo} alt="Логотип" className="login__logo" />
                     </NavLink>
        <h2 className="login__title">Рады видеть!</h2>
        <form className="login__form" onSubmit={handleSubmit} noValidate>

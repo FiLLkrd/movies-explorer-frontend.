@@ -12,7 +12,7 @@
     margin: 0;
     padding: 0;
     max-width: 364px;
-    height: 203px;
+    max-height: 203px;
 }
 
 .card__container{
@@ -40,7 +40,7 @@
     border-radius: 50px;
     background: none;
     border: none;
-    background-image: url(../../images/button-save.png);
+    background-image: url(../../images/button-save.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-color: #F9F9F9;
@@ -50,12 +50,16 @@
     transition: 0.4s ease;
 }
 
+.card__btn-save:hover{
+    opacity: 0.6;
+}
+
 .card__btn-save_active{
     background-repeat: no-repeat;
     border-radius: 50px;
     background: none;
     border: none;
-    background-image: url(../../images/button-save-active.png);
+    background-image: url(../../images/button-save-active.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-color: #2BE080;
@@ -63,6 +67,10 @@
     height: 30px;
     cursor: pointer;
     transition: 0.4s ease;
+}
+
+.card__btn-save_active:hover{
+    opacity: 0.6;
 }
 
 .card__duration{
@@ -88,14 +96,15 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 769px) {
     .card{
         max-height: 258px;
     }
     
     .card__image{
         max-width: 339px;
-        height: 190px;
+        max-height: 190px;
     }
 }
 
