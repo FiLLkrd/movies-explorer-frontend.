@@ -1,0 +1,139 @@
+.navigation{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    padding: 0;
+    margin: 0;
+    visibility: hidden;
+    
+}
+
+.navigation_active{
+    visibility: visible;
+    
+}
+
+.navigation__container{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    right: 0;
+    align-items: center;
+    width: 520px;
+    background: #ffffff;
+    z-index: 3;
+    height: 100%;
+}
+
+.navigation__link{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    margin: 0 auto 28px;
+    cursor: pointer;
+}
+
+.navigation__link:hover{
+    opacity: 0.7;
+}
+
+.navigation__link_active {
+    border-bottom: 2px solid #FFF;
+    max-width: 72px;
+    text-align: center;
+}
+
+.navigation__link:last-child{
+    padding-top: 500px;
+    padding-bottom: 60px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    align-items: center;
+    display: flex;
+    color: #000000;
+    justify-content: center;
+}
+
+.navigation__links{
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation__menu{
+    display: flex;
+    flex-direction: column;
+    padding-top: 159px;
+}
+
+.navigation__account-icon{
+    background-color: #F9F9F9;
+    border-radius: 6px;
+    margin-left: 13px;
+    width: 30px;
+    height: 30px;
+    background-image: url(../../images/account-icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navigation__close-btn{
+    border: none;
+    background-image: url(../../images/card-delete.svg);
+    background-color: transparent;
+    border: none;
+    background-size: cover;
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+    .navigation{
+        display: block;
+    }
+
+    .navigation__btn{
+        display: block;
+    }
+
+    .navigation__container{
+        display: flex;
+        flex-direction: column;
+        max-width: 520px;
+        
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .navigation__container{
+        width: 320px;
+        height: 100%;
+    }
+
+    .navigation__menu{
+        margin: 0 auto;
+    }
+
+    .navigation__close-btn{
+        top: 31px;
+        right: 19px;
+    }
+}

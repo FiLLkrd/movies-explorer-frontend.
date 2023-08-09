@@ -1,0 +1,74 @@
+.auth{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;    
+}
+
+.auth__register-btn{
+    background: none;
+    border: none;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    appearance: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    padding: 8px 0px;
+    height: 16px;
+}
+
+.auth__login-btn:hover{
+    opacity: 0.6;
+}
+
+.auth__register-btn:hover{
+    opacity: 0.6;
+}
+
+.auth__login-btn{
+    padding: 8px 20px;
+    color: #000;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; 
+    background-color: #2BE080;
+    align-items: center;
+    border-radius: 3px;
+    text-decoration: none;
+    appearance: none;
+    text-align: center;
+    vertical-align: middle;
+    height: 16px;
+}
+
+@media screen and (max-width: 320px) {
+    .auth{
+        gap: 14px;
+    }
+
+    .auth__register-btn{
+        color: #FFF;
+        text-align: right;
+        font-family: Inter;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px;
+    }
+
+    .auth__login-btn{
+        color: #000;
+        font-family: Inter;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px;
+        padding: 5px 12px;
+    }
+}

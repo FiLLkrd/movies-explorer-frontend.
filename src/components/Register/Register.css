@@ -1,0 +1,133 @@
+.register{
+    background-color: #FFFFFF;
+    padding: 0;
+    margin: 70px auto;
+    max-width: 396px;
+    align-items: center;
+}
+
+.register__title{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 40px auto;
+}
+
+.register__form{
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.register__label{
+    margin: 0;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #A0A0A0;
+}
+
+.register__input{
+    min-height: 46px;
+    background-color: #F9F9F9;
+    border-radius: 8px;
+    border: 0;
+    margin: 10px 0 20px;
+    padding-left: 15px;
+    color: #000;
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.register__button{
+    margin-top: 71px;
+    min-height: 45px;
+    background: none;
+    border: none;
+    background-color: #2BE080;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.register__button:hover{
+    opacity: 0.6;
+}
+
+.register__text{
+    margin: 16px auto;
+    align-items: center;
+    color: #A0A0A0;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.register__link{
+    color: #2BE080;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    margin-left: 6px;
+}
+
+.register__link:hover{
+    opacity: 0.6;
+}
+
+@media screen and (max-width: 768px) {
+    .register{
+        margin-top: 232px;
+    }
+
+  
+}
+
+@media screen and (max-width: 320px) {
+    .register{
+        max-width: 284px;
+        margin-top: 56px;
+    }
+
+    .register__button{
+        margin-top: 247px;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .register__text{
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .register__title{
+        text-align: center;
+
+    }
+
+    .logo{
+        margin: auto;
+        
+    }
+}
