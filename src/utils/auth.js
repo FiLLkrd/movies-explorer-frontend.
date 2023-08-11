@@ -1,4 +1,4 @@
-export const BASE_URL = 'https://api.fillfilm.nomoreparties.sbs';
+export const BASE_URL = 'http://api.fillfilm.nomoreparties.sbs';
 
 function checkResponse(res) {
     if (res.ok) {
