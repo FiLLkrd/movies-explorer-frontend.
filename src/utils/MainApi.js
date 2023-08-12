@@ -11,7 +11,7 @@ class MainApi {
     }
 
     async register({ name, email, password }) {
-        const res = await fetch(`${this._baseUrl}/sign-up`, {
+        const res = await fetch(`${this._baseUrl}/signup`, {
             method: "POST",
             headers: this._headers,
             body: JSON.stringify({
