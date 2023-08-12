@@ -93,7 +93,7 @@ class MainApi {
 }
 
 const mainApi = new MainApi({
-    baseUrl: "http://api.fillfilm.nomoreparties.sbs",
+    baseUrl: "https://api.fillfilm.nomoreparties.sbs",
     headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
