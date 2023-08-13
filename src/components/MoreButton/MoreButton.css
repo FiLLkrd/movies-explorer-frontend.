@@ -6,6 +6,9 @@
     width: 320px;
     height: 36px;
     margin: 80px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
 

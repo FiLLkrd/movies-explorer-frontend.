@@ -38,7 +38,7 @@ export default function MoviesCard(props){
     }, [card, onSave]);
 
     const deleteMovie = useCallback(async () => {
-        await mainApi.deleteMovie(card.savedMovieId);
+        await mainApi.deleteMovie(card.movieId);
     
         onDelete(savedMovie);
       }, [card, onDelete, savedMovie]);

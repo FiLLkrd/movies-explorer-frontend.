@@ -76,6 +76,8 @@
     margin-top: 43px;
     margin-bottom: 70px;
     width: 1140px;
+    padding-left: 70px;
+    padding-right: 70px;
   }
   
   .search__text {
@@ -130,6 +132,8 @@
           width: 708px;
           flex-direction: row-reverse;
           gap: 16px;
+          padding-left: 18px;
+          padding-right: 18px;
       }
 
 
