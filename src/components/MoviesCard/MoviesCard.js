@@ -5,11 +5,7 @@ import mainApi from "../../utils/MainApi";
 export default function MoviesCard(props){
     const { card, onSave, savedMovies, onDelete } = props;
     const { pathname } = useLocation();
-    const [isActive, setActive] = useState(false);
 
-    const handleToggle = () => {
-        setActive(!isActive);
-    }
 
     function setHours(value) {
         return Math.floor(value / 60);

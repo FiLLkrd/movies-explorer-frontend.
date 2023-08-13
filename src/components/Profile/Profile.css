@@ -134,3 +134,18 @@
 
     }
 }
+
+.profile__message {
+    font-weight: 500;
+    color: #504d4d;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    padding-bottom: 100px;
+    visibility: hidden;
+  
+  }
+
+.profile__message_hidden {
+    visibility: visible;
+  }

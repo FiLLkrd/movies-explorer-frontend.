@@ -8,6 +8,7 @@ import BurgerButton from "../BurgerButton/BurgerButton";
 
 export default function Header(){
     const { user } = useUserStore();
+    let { pathname } = useLocation();
 
     return(
         <header className="header">
