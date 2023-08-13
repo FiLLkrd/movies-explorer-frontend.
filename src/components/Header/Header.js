@@ -2,23 +2,27 @@ import React from "react";
 import HeaderLogo from "../../images/HeaderLogo.svg";
 import { NavLink, useLocation } from 'react-router-dom';
 import NavBar from "../NavBar/NavBar";
+import { useUserStore } from "../../contexts/CurrentUserContext";
 
 import BurgerButton from "../BurgerButton/BurgerButton";
 
 export default function Header(){
-    let location = useLocation();
+    const { user } = useUserStore();
 
     return(
-        <>
-        {(location.pathname === '/') ? (
-            <header className="header">
-            <div className="header__container">
-            <img src={HeaderLogo} alt="Логотип" className="header__logo" />
-            <NavBar />
-        </div>
-        </header>
-        ) : (
-            <header className="header header_movies">
+        <header className="header">
+            {!user ? (
+                <>
+                <div className="header__container">
+            <NavLink exact to='/'>
+                    <img src={HeaderLogo} alt="Логотип" className="header__logo" />
+                    </NavLink>
+            
+                <NavBar />
+                </div>
+                </>
+            ) : (
+                <>
                 <div className="header__container">
                     <NavLink exact to='/'>
                     <img src={HeaderLogo} alt="Логотип" className="header__logo" />
@@ -33,8 +37,11 @@ export default function Header(){
                 </div>
                 <BurgerButton />
                 </div>
-            </header>
-        )}  
-        </>
+                
+                </>
+                )}
+
+        </header>
     );
 }
+

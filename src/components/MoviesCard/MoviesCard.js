@@ -65,15 +65,10 @@ export default function MoviesCard(props){
             <li className="card">
             <div className="card__container">
                 <div className="card__info">
-                    <h2 className="card__name">{card.NameRU}</h2>
+                    <h2 className="card__name">{card.nameRU}</h2>
                     <p className="card__duration">{setHours(card.duration)}ч {setMinutes(card.duration)}м</p>
                 </div>
-                <button onClick={handleToggle} className={isActive ? "card__btn-save_active" : "card__btn-save"}></button>
-            </div>
-            <a href={card.trailerLink} target="_blank" rel="noreferrer">
-            <img className="card__image" src={card.image} alt="Обложка фильма"/>
-            </a>
-        {pathname === "/movies" ? (
+                {pathname === "/movies" ? (
         <button
           className={saveBtnClassName}
           type="button"
@@ -88,6 +83,11 @@ export default function MoviesCard(props){
           onClick={onUnsaveButtonClick}
         />
       )}
+            </div>
+            <a href={card.trailerLink} target="_blank" rel="noreferrer">
+            <img className="card__image" src={card.image} alt="Обложка фильма"/>
+            </a>
+        
     </li>
   );
 }

@@ -7,7 +7,7 @@ export default function SearchForm(props){
     const submitSearchForm = useCallback(
     (e) => {
         e.preventDefault();
-        onsubmit(query);
+        onSubmit(query);
     },
     [onSubmit, query]
     );
