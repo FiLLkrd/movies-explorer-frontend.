@@ -16,8 +16,19 @@
     border-bottom: 1px solid rgba(84, 84, 84, 0.7);
 }
 
+.movies__err{
+    color: red;
+    width: 200px;
+}
+
 @media screen and (max-width: 768px) {
     .movies{
         max-width: 768px;
     }
+}
+
+
+
+.movies__message{
+    color: red;
 }

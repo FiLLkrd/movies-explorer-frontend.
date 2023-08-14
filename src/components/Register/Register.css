@@ -168,3 +168,11 @@
     line-height: normal;    
 }
 
+.form__error_visible{
+    display: initial;
+}
+
+.form__error_invisible{
+    display: none;
+    }
+

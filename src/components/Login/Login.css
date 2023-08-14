@@ -160,6 +160,18 @@
     line-height: normal;
 }
 
+.login__input-error {
+    display: block;
+    font-family: 'Inter', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #EE3465;
+    padding-top: 10px;
+    visibility: hidden;
+}
+
 .login__input-error{
     color: #EE3465;
     font-family: Inter;
@@ -168,3 +180,4 @@
     font-weight: 400;
     line-height: normal;
 }
+

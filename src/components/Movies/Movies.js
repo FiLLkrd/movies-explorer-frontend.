@@ -24,6 +24,7 @@ export default function Movies() {
       return screenWidth >= 1088 ? 12 : screenWidth >= 684 ? 8 : 5;
     });
 
+
     function handleLoadMoreButtonClick() {
         if (screenWidth >= 1088) {
           setFilmsCount((prev) => prev + 3);
@@ -49,6 +50,8 @@ export default function Movies() {
           setIsLoading(true);
           const films = await moviesApi.getInitialsMovies();
     
+          
+
           setAllFilms(
             films.map((film) => ({
               ...film,
@@ -57,6 +60,8 @@ export default function Movies() {
             
             }))
           );
+          setResultError(false);
+          setErrorMessage("");
         } catch (error) {
           console.log(`Ошибка: ${error}.`);
           setResultError(true);
@@ -64,9 +69,17 @@ export default function Movies() {
             'Во время запроса произошла ошибка. Возможно, проблема с соединением или сервер недоступен. Подождите немного и попробуйте ещё раз.'
           );
         } finally {
+          
           setIsLoading(false);
         }
       }, []);
+
+      useEffect(() => {
+        if (allFilms.length === 0) {
+            fetchAllFilms();
+        }
+    }, fetchAllFilms, allFilms.length);
+
 
       const fetchSavedFilms = useCallback(async () => {
         const res = await mainApi.getSavedMovie();
@@ -140,7 +153,7 @@ export default function Movies() {
         onInputChange={handleSearchFormInput}
         shortsToggleSwitch={shortsToggleSwitch}
         onToggleChange={handleShortsToggleSwitchState}
-        onSubmit={handleSearch}
+        onSubmit={handleSearch} 
         />
         {isLoading ? (
             <Preloader />
@@ -152,12 +165,23 @@ export default function Movies() {
             )) || 
             (filterValue && filmsToRender.length && (
         <>
+        <div>
+            {allFilms.length === 0 ? (
+                <p className="movies__err">Фильм не найден</p>
+            ) : (
+                <>
         <MoviesCardsList 
         cards={filmsToRender}
         onSave={handleFilmSave}
         savedMovies={savedFilms}
         onDelete={handleFilmDelete}
+        resultError={resultError}
         />
+        </>
+            )}
+        </div>
+
+        
         {filteredFilms.length > filmsCount && (
     <MoreButton moreButtonClick={handleLoadMoreButtonClick} />
     )}
