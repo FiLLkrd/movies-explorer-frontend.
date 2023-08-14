@@ -54,6 +54,7 @@ export default function Movies() {
               ...film,
               image: `https://api.nomoreparties.co${film.image.url}`,
               thumbnail: `https://api.nomoreparties.co${film.image.formats.thumbnail.url}`,
+            
             }))
           );
         } catch (error) {

@@ -33,9 +33,10 @@ export default function SearchForm(props){
       <input
         className="search__checkbox"
         type="checkbox"
-        id="checkbox"
+        id="switch"
         onChange={onToggleChange}
         checked={shortsToggleSwitch} />
+        <label className="search__checkbox-label" htmlFor="switch"></label>
       <span className="search__chexbox-text">Короткометражки</span>
     </div>
         </>
