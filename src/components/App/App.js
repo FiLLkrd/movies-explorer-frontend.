@@ -14,6 +14,7 @@ import SavedMovies from "../SavedMovies/SavedMovies";
 
 import ProtectedRoute from '../ProtectedRoute/ProtectedRoute';
 import { checkAuth } from '../../utils/auth';
+import PopupNotFounnd from "../PopupNotFound/PopupNotFound";
 
 
 function App() {
@@ -21,6 +22,16 @@ function App() {
   const [appInited, setAppInited] = useState(false);
   const [currentUser, setCurrentUser] = useState(null);
   const navigate = useNavigate();
+
+  const [isPopup, setIsInfoTooltip] = useState({
+    isOpen: false,
+    successful: true,
+    text: '',
+  });
+
+  function closePopup() {
+    setIsInfoTooltip({ ...isPopup, isOpen: false });
+  }
 
   useEffect(() => {
     const jwt = localStorage.getItem('jwt');
@@ -95,7 +106,10 @@ function App() {
       <Route path="/sign-in" element={<Login />}/>
       <Route path="*" element={<NotFoundPage />} />
       </Routes>
-      
+      <PopupNotFounnd
+            status={isPopup}
+            onClose={closePopup}
+          />
     </div>
     </CurrentUserContext.Provider>
   );

@@ -64,6 +64,24 @@
     line-height: normal;
 }
 
+.login__button:disabled{
+    width: 100%;
+    background: #b4b4b4;
+    border-radius: 3px;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Inter', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #090909;
+    padding: 13px 0px 15px;
+    margin: 69px auto 0;
+    cursor: pointer;
+}
+
 .login__button:hover{
     opacity: 0.6;
 }

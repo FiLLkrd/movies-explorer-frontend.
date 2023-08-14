@@ -44,9 +44,9 @@
     line-height: normal;
 }
 
-register__button:disabled{
+.register__button:disabled{
     width: 100%;
-    background: #828791;
+    background: #b4b4b4;
     border-radius: 3px;
     border: none;
     box-sizing: border-box;

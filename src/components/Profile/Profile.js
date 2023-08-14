@@ -87,7 +87,7 @@ export default function Profile(){
                 <Link 
                 className="profile__btn-exit" 
                 type="button"
-                to=""
+                to="/"
                 disabled={!isUpdatedData || !isValid}
                 onClick={logout} >Выйти из аккаунта</Link>
             </form>

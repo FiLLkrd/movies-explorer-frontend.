@@ -49,12 +49,30 @@
     font-weight: 400;
     line-height: normal;
     cursor: pointer;
-    margin-top: 210px;
+    
     margin-bottom: 16px;
+}
+
+.profile__btn-change:disabled{
+    background: none;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    margin: 0 0 16px;
+    padding: 0;
+    text-align: center;
+    color: #7c7c7c;
 }
 
 .profile__btn-change:hover{
     opacity: 0.6;
+}
+
+.profile__btn-change:disabled:hover{
+    opacity: 1;
 }
 
 .profile__btn-exit{
