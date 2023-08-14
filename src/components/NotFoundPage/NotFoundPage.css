@@ -41,7 +41,9 @@
     font-weight: 400;
     line-height: normal;
     text-decoration: none;
-    cursor: pointer;    
+    cursor: pointer;  
+    border: none;
+    background: none;  
 }
 
 @media screen and (max-width: 320px) {
