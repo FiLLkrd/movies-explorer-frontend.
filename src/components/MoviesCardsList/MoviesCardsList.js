@@ -5,16 +5,22 @@ export default function MoviesCardsList(props){
     const { cards, onSave, savedMovies, onDelete } = props;
     return(
         <section className="cards">
+            
+
             <ul className="cards__list">
-                {cards.map((card, index) => (
-                    <MoviesCard 
-                    card={card}
-                    key={card.id || index}
-                    savedMovies={savedMovies}
-                    onSave={onSave}
-                    onDelete={onDelete}
-                    />
-                ))}
+            {cards.length === 0 ? (
+            <p>Ничего не найдено</p>
+            ) : (
+                cards.map((card, index) => (
+                <MoviesCard 
+                card={card}
+                key={card.id || index}
+                savedMovies={savedMovies}
+                onSave={onSave}
+                onDelete={onDelete}
+                />
+            )))}
+                
             </ul>
         </section>
     );

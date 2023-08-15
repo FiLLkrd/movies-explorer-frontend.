@@ -76,3 +76,10 @@
         line-height: normal;
     }
 }
+
+.movies__message{
+    color: red;
+    background-color: #000;
+    width: 200px;
+    height: 500px;
+}

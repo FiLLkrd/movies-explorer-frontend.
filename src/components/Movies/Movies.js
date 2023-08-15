@@ -49,9 +49,6 @@ export default function Movies() {
         try {
           setIsLoading(true);
           const films = await moviesApi.getInitialsMovies();
-    
-          
-
           setAllFilms(
             films.map((film) => ({
               ...film,
@@ -74,18 +71,16 @@ export default function Movies() {
         }
       }, []);
 
-      useEffect(() => {
-        if (allFilms.length === 0) {
-            fetchAllFilms();
-        }
-    }, fetchAllFilms, allFilms.length);
-
-
       const fetchSavedFilms = useCallback(async () => {
-        const res = await mainApi.getSavedMovie();
-    
-        setSavedFilms(res);
+        try {
+          const res = await mainApi.getSavedMovie();
+          setSavedFilms(res);
+        } catch (error) {
+          console.log(error);
+          setSavedFilms();
+        }
       }, []);
+      
     
       useEffect(() => {
         fetchAllFilms();
@@ -146,6 +141,7 @@ export default function Movies() {
         setQueryValue(event.target.value);
       }, []);
 
+
     return(
     <main className="movies">
         <SearchForm 
@@ -153,7 +149,7 @@ export default function Movies() {
         onInputChange={handleSearchFormInput}
         shortsToggleSwitch={shortsToggleSwitch}
         onToggleChange={handleShortsToggleSwitchState}
-        onSubmit={handleSearch} 
+        onSubmit={handleSearch}
         />
         {isLoading ? (
             <Preloader />
@@ -164,24 +160,14 @@ export default function Movies() {
                 </p>
             )) || 
             (filterValue && filmsToRender.length && (
-        <>
-        <div>
-            {allFilms.length === 0 ? (
-                <p className="movies__err">Фильм не найден</p>
-            ) : (
-                <>
-        <MoviesCardsList 
-        cards={filmsToRender}
-        onSave={handleFilmSave}
-        savedMovies={savedFilms}
-        onDelete={handleFilmDelete}
-        resultError={resultError}
-        />
-        </>
-            )}
-        </div>
-
-        
+          <>
+            <MoviesCardsList 
+          cards={filmsToRender}
+          onSave={handleFilmSave}
+          savedMovies={savedFilms}
+          onDelete={handleFilmDelete}
+          resultError={resultError}
+          />
         {filteredFilms.length > filmsCount && (
     <MoreButton moreButtonClick={handleLoadMoreButtonClick} />
     )}
