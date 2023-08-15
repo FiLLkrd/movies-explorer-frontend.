@@ -16,10 +16,6 @@
     border-bottom: 1px solid rgba(84, 84, 84, 0.7);
 }
 
-.movies__err{
-    color: red;
-    width: 200px;
-}
 
 @media screen and (max-width: 768px) {
     .movies{
@@ -30,9 +26,8 @@
 
 
 .movies__message{
-    
-    color: red;
-    background-color: #000;
-    width: 1000px;
-    height: 500px;
+    color: #000;
+    background: none;
+    margin: 0 auto 50px;
+    text-align: center;
 }

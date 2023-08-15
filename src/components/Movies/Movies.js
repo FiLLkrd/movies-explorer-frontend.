@@ -71,7 +71,7 @@ export default function Movies() {
         }
       }, []);
 
-      const fetchSavedFilms = useCallback(async () => {
+const fetchSavedFilms = useCallback(async () => {
         try {
           const res = await mainApi.getSavedMovie();
           setSavedFilms(res);
@@ -131,7 +131,10 @@ export default function Movies() {
           ...film,
           savedMovieId: savedFilms.find((f) => f.movieId === film.id)?._id,
         }));
+        
       }, [filteredFilms, filmsCount, savedFilms]);
+
+      console.log(filmsToRender);
     
       function handleSearch(search) {
         setFilterValue(search);
@@ -173,8 +176,9 @@ export default function Movies() {
     )}
     </>
     )) ||
-    null
-    )}
+    (filmsToRender.length === 0 && (
+      <p className="movies__message">Ничего не найдено</p>
+    )))}
     </main>
     );
     }
