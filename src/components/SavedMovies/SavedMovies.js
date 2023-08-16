@@ -99,7 +99,9 @@ export default function SavedMovies(){
                 />
               </>
             )) ||
-            null
+            (filteredFilms.length === 0 && (
+              <p className="movies__message">Ничего не найдено</p>
+            ))
           )}
     </main>
     );
