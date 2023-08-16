@@ -75,7 +75,7 @@ export default function Register(){
         onChange={handleChange}
         required
         placeholder="Введите email"
-        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+        pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"
         />
         {errors['email'] && (
             <span className="form__error">{errors['email']}</span>
