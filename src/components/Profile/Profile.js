@@ -57,10 +57,12 @@ export default function Profile(){
                 value={values.name || ''}
                 onChange={handleChange}
                 error={errors.name}
+                minLength="2"
+                maxLength="30"
                 />
                 
                 </div>
-                <span className="profile__input-error">{errors['email']}</span>
+                <span className="profile__input-error">{errors['name']}</span>
                 <div className="profile__container">
                 <label className="profile__label" htmlFor="email">E-mail</label>
                 <input 
