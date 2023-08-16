@@ -153,6 +153,7 @@ const fetchSavedFilms = useCallback(async () => {
         shortsToggleSwitch={shortsToggleSwitch}
         onToggleChange={handleShortsToggleSwitchState}
         onSubmit={handleSearch}
+        autocomlete="off"
         />
         {isLoading ? (
             <Preloader />

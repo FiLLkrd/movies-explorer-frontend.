@@ -90,7 +90,7 @@ export default function SavedMovies(){
                 <span className="movies__message-none">{errorMessage}</span>
               </p>
             )) ||
-            (filteredFilms.length && (
+            (filteredFilms.length > 0 && (
               <>
                 <MoviesCardsList
                   cards={filteredFilms}

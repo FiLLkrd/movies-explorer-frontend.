@@ -58,7 +58,9 @@ export default function Profile(){
                 onChange={handleChange}
                 error={errors.name}
                 />
+                
                 </div>
+                <span className="profile__input-error">{errors['email']}</span>
                 <div className="profile__container">
                 <label className="profile__label" htmlFor="email">E-mail</label>
                 <input 
@@ -71,8 +73,11 @@ export default function Profile(){
                 value={values.email || ''}
                 onChange={handleChange}
                 error={errors.email}
+                pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"
                 />
+               
                 </div>
+                <span className="profile__input-error">{errors['email']}</span>
                 <p
             className={`profile__message ${
               isShowSuccessMessage ? 'profile__message_hidden' : 'null'
